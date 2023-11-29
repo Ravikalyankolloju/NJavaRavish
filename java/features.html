@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Java Features</title>
+	<script>
+		!function (theme, navWidth) {
+			if (theme === 'dark') document.documentElement.classList.add('dark-theme')
+			if (navWidth) document.documentElement.style.setProperty('--nav-width', `${navWidth}px`)
+		}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)') && 'dark'),
+			localStorage && localStorage.getItem('nav-width'))
+	</script>
+	<link rel="stylesheet" href="_/css/site.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../java/_/img/favicon.png" />
+	<script type="text/javascript" src="../scripts/highlighter/prettify.js"></script>
+	<link rel='stylesheet' id='yarppRelatedCss-css'
+		href='../scripts/wp-content/plugins/yet-another-related-posts-plugin/style/relatedb328.css?ver=5.30.6'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='news-pro-theme-css'
+		href='../scripts/wp-content/themes/news-pro/styleb426.css?ver=3.0.4373' type='text/css' media='all' />
+	<script type='text/javascript' src='../scripts/wp-includes/js/jquery/jquery.min3088.js?ver=3.7.0'
+		id='jquery-core-js'></script>
+	<script type='text/javascript' src='../scripts/wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1'
+		id='jquery-migrate-js'></script>
+	<script type='text/javascript' src='../scripts/wp-content/themes/news-pro/js/responsive-menu8a54.js?ver=1.0.0'
+		id='news-responsive-menu-js'></script>
+	<link rel='dns-prefetch' href='http://www.googletagmanager.com/' />
+	<link rel="preload" as="font"
+		href="https://beginnersbook.com/wp-content/themes/news-pro/fonts/roboto-v27-latin-regular.woff2" crossorigin>
+	<link rel="preload" as="font"
+		href="https://beginnersbook.com/wp-content/themes/news-pro/fonts/raleway-v28-latin-700.woff2" crossorigin>
+	<link rel="preload" as="font"
+		href="https://beginnersbook.com/wp-content/themes/news-pro/fonts/pt-sans-v12-latin-700.woff2" crossorigin>
+</head>
+
+<body class="article">
+	<header class="header">
+		<nav class="navbar">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="#">
+					<img id="springlogo" class="block" src="F:\JavaRavish\www.javaravish.com\scripts\images\jrlogo.PNG"
+						alt="Java Ravish" />
+				</a>
+				<button class="navbar-burger" data-target="topbar-nav">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+			<div id="topbar-nav" class="navbar-menu">
+				<div class="navbar-end">
+					<div class="navbar-item is-hoverable">
+						<a class="navbar-link" href="#">Home</a>
+					</div>
+					<div class="navbar-item is-hoverable">
+						<a class="navbar-link" href="#">Java</a>
+					</div>
+					<div class="navbar-item is-hoverable">
+						<a class="navbar-link" href="#">Spring</a>
+					</div>
+
+					<div class="navbar-item is-hoverable">
+						<a class="navbar-link" href="#">SpringBoot</a>
+					</div>
+
+					<div class="navbar-item is-hoverable">
+						<a class="navbar-link navbar-link-list" href="#">Interview Questions</a>
+						<div class="navbar-dropdown lg">
+							<a class="navbar-item" href="#">Java Interview</a>
+							<a class="navbar-item" href="#">Java 8 Interview</a>
+							<a class="navbar-item" href="#">Java Programming Interview</a>
+							<a class="navbar-item" href="#">Spring Interview</a>
+							<a class="navbar-item" href="#">SpringBoot Interview</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<label class="theme-toggler">
+				<input type="checkbox" type="checkbox" id="switch-theme-checkbox" name="switch-theme-checkbox" />
+				<span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon"
+						class="svg-inline--fa fa-moon moon" role="img" xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 384 512">
+					</svg>
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sun"
+						class="svg-inline--fa fa-sun sun" role="img" xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 512 512">
+					</svg></span>
+			</label>
+		</nav>
+	</header>
+	<script>
+		!function (theme) {
+			if (theme === 'dark') {
+				document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
+			}
+		}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)') && 'dark'))
+	</script>
+	<div class="body">
+		<div class="nav-container" data-component="framework" data-version="6.1.1">
+			<aside class="nav">
+				<div class="panels">
+					<div class="nav-panel-menu is-active" data-panel="menu">
+						<nav class="nav-menu">
+							<div class="context">
+								<button class="browse-version" id="browse-version">
+								</button>
+							</div>
+							<ul class="nav-list">
+								<li class="nav-item" data-depth="0">
+									<ul class="nav-list">
+										<h4 back class="widget-title">Java Features</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../java/intro.html">Java
+												Introduction</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../java/history.html">History
+												of Java</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../java/features.html">Features
+												of Java</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../06/cpp-vs-java-difference-between-cpp-and-java/index.html">C++
+												vs Java</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../06/jdk-vs-jre-vs-jvm-difference-between-them/index.html">JDK
+												vs JRE vs JVM</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/jvm/index.html">JVM - Java Virtual
+												Machine</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/first-java-program/index.html">First Java
+												Program</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/variables-in-java/index.html">Variables</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/data-types-in-java/index.html">Data Types</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/operators-in-java/index.html">Operators</a>
+										</li>
+										<h4 class="widget-title">Java Flow Control</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/if-else-statement-in-java/index.html">Java
+												If-else</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/java-switch-case/index.html">Java
+												Switch-Case</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2015/03/for-loop-in-java-with-example/index.html">Java
+												For loop</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2015/03/while-loop-in-java-with-examples/index.html">Java
+												while loop</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2015/03/do-while-loop-in-java-with-example/index.html">Java
+												do-while loop</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/java-continue-statement/index.html">Continue
+												statement</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/java-break-statement/index.html">break
+												statement</a></li>
+										<h4 class="widget-title">Java Arrays</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/java-arrays/index.html">Java Arrays</a></li>
+										<h4 class="widget-title">OOPs Concepts</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/oops-concepts/index.html">OOPs Concepts</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/03/constructors-in-java/index.html">Constructor</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/java-strings/index.html">Java String</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/java-static-class-block-methods-variables/index.html">Static
+												keyword</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/03/inheritance-in-java/index.html">Inheritance</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/java-inheritance-types/index.html">Types of
+												inheritance</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/aggregation/index.html">Aggregation</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/association/index.html">Association</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2014/07/super-keyword-in-java-with-example/index.html">Super
+												Keyword</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/method-overloading/index.html">Method
+												overloading</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2014/01/method-overriding-in-java-with-example/index.html">Method
+												overriding</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2014/01/difference-between-method-overloading-and-overriding-in-java/index.html">Overloading
+												vs Overriding</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/03/polymorphism-in-java/index.html">Polymorphism</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/runtime-compile-time-polymorphism/index.html">Types
+												of polymorphism</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/java-static-dynamic-binding/index.html">Static
+												and dynamic binding</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/java-abstract-class-method/index.html">Abstract
+												class and methods</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/java-interface/index.html">Interface</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/abstract-class-vs-interface-in-java/index.html">Abstract
+												class vs interface</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/encapsulation-in-java/index.html">Encapsulation</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/03/packages-in-java/index.html">Packages</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/java-access-modifiers/index.html">Access
+												modifiers</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/java-garbage-collection/index.html">Garbage
+												Collection</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/inner-class/index.html">Inner classes</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/java-static-import/index.html">Static
+												import</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/static-constructor/index.html">Static
+												constructor</a></li>
+										<h4 class="widget-title">Java Exception Handling</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/java-exception-handling/index.html">Exception
+												handling</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/try-catch-in-java/index.html">Java
+												try-catch</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/throw-in-java/index.html">Java throw</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/java-throws/index.html">Java throws</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/java-checked-unchecked-exceptions-with-examples/index.html">Checked
+												and Unchecked Exceptions</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/flow-in-try-catch-finally/index.html">Jav try
+												catch finally</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/exception-handling-examples/index.html">Exception
+												Examples</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../09/exception-propagation-in-java-with-examples/index.html">Exception
+												Propagation</a></li>
+										<h4 class="widget-title">Java Multithreading</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../java-collections-tutorials/index.html">Multithreading</a>
+										</li>
+										<h4 class="widget-title">Java Serialization</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../java-collections-tutorials/index.html">Serialization</a>
+										</li>
+										<h4 class="widget-title">Java 8 Features</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../java-collections-tutorials/index.html">Java 8
+												Features</a></li>
+										<h4 class="widget-title">Collections Framework</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../java-collections-tutorials/index.html">Collections in
+												Java</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/java-arraylist/index.html">Java ArrayList</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/linkedlist-in-java-with-example/index.html">Java
+												LinkedList</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/vector-in-java/index.html">Java Vector</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/hashset-class-in-java-with-example/index.html">Java
+												HashSet</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/linkedhashset-class-in-java-with-example/index.html">Java
+												LinkedHashSet</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/treeset-class-in-java-with-example/index.html">Java
+												TreeSet</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/hashmap-in-java-with-example/index.html">Java
+												HashMap</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/treemap-in-java-with-example/index.html">Java
+												TreeMap</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/linkedhashmap-in-java/index.html">Java
+												LinkedHashMap</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/queue-interface-in-java-collections/index.html">Java
+												Queue</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/java-collections-priorityqueue-interface/index.html">Java
+												PriorityQueue</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/java-collections-deque-interface/index.html">Java
+												Deque</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/comparable-interface-in-java-with-example/index.html">Comparable
+												interface</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/comparator-interface-in-java/index.html">Comparator
+												interface</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2015/03/java-collections-interview-questions-and-answers/index.html">Collections
+												Interview Questions</a></li>
+										<hr>
+									</ul>
+								</li>
+							</ul>
+							<div class="toggle-sm">
+								<button id="nav-toggle-2" class="nav-toggle"></button>
+							</div>
+						</nav>
+					</div>
+					<a id="nav-collapse-toggle"></a>
+				</div>
+				<div class="nav-resize"></div>
+			</aside>
+		</div>
+		<script>
+			!function (sidebar) {
+				if (sidebar) {
+					document.body.classList.add('nav-sm')
+				}
+			}(localStorage && localStorage.getItem('sidebar') === 'close')
+		</script>
+		<main>
+			<div class="toolbar" role="navigation">
+				<button id="nav-toggle-1" class="nav-toggle">&#9776;</button>
+			</div>
+			<div class="doc">
+				<nav class="breadcrumbs" aria-label="breadcrumbs">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="java-introduction.html">Java Features</a></li>
+					</ul>
+					<hr>
+				</nav>
+				<article class="post-11027 post type-post status-publish format-standard category-learn-java entry"
+					aria-label="Features of Java Programming Language" itemscope=""
+					itemtype="https://schema.org/CreativeWork">
+					<div class="entry-content" itemprop="text">
+						<p><a href="https://beginnersbook.com/java-tutorial-for-beginners-with-examples/">Java</a> is
+							one of widely used and popular programming language. Java is packed with full of features,
+							yet it still maintains the simplicity and flexibility that allows a developer to quickly
+							learn and start working on java projects with ease. The flexibility of writing a java code
+							on one machine and running it on several other machine makes it a popular choice in
+							programming world. </p>
+
+
+
+						<p>On top of that, the regular updates makes it safe and stable choice for the projects that
+							intend to run for a longer period of time. The features of Java are also known as
+							<strong>Java BuzzWords</strong>.</p>
+
+
+
+						<p>According to Oracle home page <strong>Java is the #1 programming language</strong> and
+							development platform with millions of developers running more than <strong>51 billion Java
+								Virtual Machines worldwide</strong>.</p>
+
+
+
+						<h2 class="wp-block-heading" id="h-features-of-java">Features of Java</h2>
+
+
+
+						<p>Following are some of the useful and advanced features of java:</p>
+
+
+
+						<h3 class="wp-block-heading" id="h-1-simple">1. Simple</h3>
+
+
+
+						<p>Java is a very simple programming language, it is easy to learn, read and write in Java. The
+							syntax of Java is clean and easy to understand. </p>
+
+
+
+						<p>Here’s why java is <strong>simple programming language</strong> compared to other popular
+							programming language:</p>
+
+
+
+						<ul>
+							<li>Java syntax is similar to <a
+									href="https://beginnersbook.com/2014/01/c-tutorial-for-beginners-with-examples/">C</a>/<a
+									href="https://beginnersbook.com/2017/08/c-plus-plus-tutorial-for-beginners/">C++</a>
+								so it is easier to learn java if one is familiar with C or C++. However java doesn’t use
+								the complex features of C and C++ such as Pointers, go to statements, preprocessors/
+								header files, multiple inheritance, operator overloading etc.</li>
+							<li>There is no need to remove unreferenced objects explicitly as there is an Automatic <a
+									href="https://beginnersbook.com/2013/04/java-garbage-collection/">Garbage Collection
+									in Java</a>.</li>
+						</ul>
+
+
+
+						<h3 class="wp-block-heading" id="h-2-platform-independent">2. Platform Independent</h3>
+
+
+
+						<p>Java is a platform independent language. Compiler(javac) converts source code (.java file) to
+							the byte code(.class file). JVM executes the bytecode produced by compiler. This byte code
+							can run on any platform such as Windows, Linux, Mac OS etc. Which means a program that is
+							compiled on windows can run on Linux and vice-versa. </p>
+
+
+
+						<p>Each operating system has different JVM, however the output they produce after execution of
+							bytecode is same across all operating systems. That is why we call java as platform
+							independent language.</p>
+
+
+
+						<h3 class="wp-block-heading" id="h-3-secure">3. Secure</h3>
+
+
+
+						<p>Security is one of the biggest concern in programming language as these programming langauges
+							are used to develop some of the critical and sensitive applications that needs to be secured
+							such as banking applications. Java is more secure than C/C++ as does not allow developers to
+							create pointers, thus it becomes impossible to access a variable from outside if it’s not
+							been initialized.</p>
+
+
+
+						<p>We don’t have pointers and we cannot access out of bound arrays (you get
+							ArrayIndexOutOfBoundsException if you try to do so) in java. That’s why several security
+							flaws like stack corruption or buffer overflow is impossible to exploit in Java.</p>
+
+
+
+						<h3 class="wp-block-heading" id="h-4-object-oriented-programming-language">4. Object-Oriented
+							Programming language</h3>
+
+
+
+						<p>Object oriented programming is a way of organizing programs as collection of objects, each of
+							which represents an instance of a class.</p>
+
+
+
+						<p>4 main concepts of Object Oriented programming are:</p>
+
+
+
+						<ol>
+							<li><a
+									href="https://beginnersbook.com/2013/03/oops-in-java-encapsulation-inheritance-polymorphism-abstraction/">Abstraction</a>
+							</li>
+							<li><a href="https://beginnersbook.com/2013/05/encapsulation-in-java/">Encapsulation</a>
+							</li>
+							<li><a href="https://beginnersbook.com/2013/05/java-inheritance-types/">Inheritance</a></li>
+							<li><a href="https://beginnersbook.com/2013/03/polymorphism-in-java/">Polymorphism</a></li>
+						</ol>
+
+
+
+						<h3 class="wp-block-heading" id="h-5-robust">5. Robust</h3>
+
+
+
+						<p>Robust means reliable. Java programming language is developed in a way that puts a lot of
+							emphasis on early checking for possible errors, that’s why java compiler is able to detect
+							errors that are not easy to detect in other programming languages. </p>
+
+
+
+						<p>The main features of java that makes it robust are:</p>
+
+
+
+						<ol>
+							<li>Garbage collection, </li>
+							<li>Exception Handling </li>
+							<li>Memory allocation.</li>
+						</ol>
+
+
+
+						<h3 class="wp-block-heading" id="h-6-distributed">6. Distributed</h3>
+
+
+
+						<p>Using java programming language we can create distributed applications. RMI(Remote Method
+							Invocation) and EJB(Enterprise Java Beans) are used for creating distributed applications in
+							java. </p>
+
+
+
+						<p><strong>In simple words:</strong> The java programs can be distributed on more than one
+							systems that are connected to each other using internet connection. Objects on one JVM (java
+							virtual machine) can execute procedures on a remote JVM.</p>
+
+
+
+						<h3 class="wp-block-heading" id="h-7-multithreading">7. Multithreading</h3>
+
+
+
+						<p>Java supports&nbsp;<a
+								href="https://beginnersbook.com/2013/03/multithreading-in-java/">multithreading</a>.
+							Multithreading is a Java feature that allows concurrent execution of two or more parts of a
+							program for maximum utilisation of CPU.</p>
+
+
+
+						<h3 class="wp-block-heading" id="h-8-portable">8. Portable</h3>
+
+
+
+						<p>As discussed above, java code that is written on one machine can run on another machine. The
+							platform independent byte code can be carried to any platform for execution that makes java
+							code portable.</p>
+
+
+
+						<h3 class="wp-block-heading" id="h-9-architectural-neutral">9. Architectural Neutral</h3>
+
+
+
+						<p>As we know Java is a platform independent language, which means program written and compiled
+							on one machine can run on any other machine having different operating system. Java follows
+							the principle of “<strong>Write once run anywhere</strong>“</p>
+
+
+
+						<p>Compiler converts the java file into byte-code and this byte code is machine independent,
+							java virtual machine can easily translate this byte code into machine specific code. This
+							makes java architectural neutral programming language.</p>
+
+
+
+						<h3 class="wp-block-heading" id="h-10-dynamic">10. Dynamic</h3>
+
+
+
+						<p>Java is a dynamic programming language. <a
+								href="https://beginnersbook.com/2013/04/oops-concepts/">OOPs</a> allows developers to
+							add new classes to the existing packages, add new methods to the existing classes as well as
+							modifying the method without changing the original method code by using the concept of
+							method overriding. </p>
+
+
+
+						<p>All these features make java dynamic. It also allows classes to be loaded on demand. It also
+							supports functions from its native languages such as C and C++.</p>
+
+
+
+						<h3 class="wp-block-heading" id="h-12-performance">12. Performance</h3>
+
+
+
+						<p>Java is significantly faster than other traditional interpreted programming languages.
+							Compiled java code which is known as byte code is like a machine code, that allows a faster
+							execution. Java uses Just in Time compiler which can execute the code on demand, this allows
+							to execute only the method that is being called, which makes it faster and efficient.</p>
+
+
+
+						<p>Also java uses the concept of multithreading, which allows concurrent execution of several
+							parts of the code at the same time. This provides high performance.</p>
+
+
+
+						<p> It is still a little bit slower than a compiled language (e.g., C++). Java is an interpreted
+							language that is why it is slower than compiled languages, e.g., C, C++, etc.</p>
+					</div>
+					<footer class="entry-footer"></footer>
+				</article>
+			</div>
+		</main>
+	</div>
+	<footer class="footer flex">
+		<div id="spring-links flex">
+			<p class="smallest antialiased">©
+				<script>var d = new Date();
+					document.write(d.getFullYear());</script>, The content is copyrighted to Ravi Kalyan Kolloju.
+			</p>
+		</div>
+	</footer>
+	<script src="_/js/site.js"></script>
+</body>
+
+</html>

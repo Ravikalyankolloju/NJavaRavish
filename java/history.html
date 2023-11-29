@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Java History</title>
+	<script>
+		!function (theme, navWidth) {
+			if (theme === 'dark') document.documentElement.classList.add('dark-theme')
+			if (navWidth) document.documentElement.style.setProperty('--nav-width', `${navWidth}px`)
+		}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)') && 'dark'),
+			localStorage && localStorage.getItem('nav-width'))
+	</script>
+	<link rel="stylesheet" href="_/css/site.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../java/_/img/favicon.png" />
+	<script type="text/javascript" src="../scripts/highlighter/prettify.js"></script>
+	<link rel='stylesheet' id='yarppRelatedCss-css'
+		href='../scripts/wp-content/plugins/yet-another-related-posts-plugin/style/relatedb328.css?ver=5.30.6'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='news-pro-theme-css'
+		href='../scripts/wp-content/themes/news-pro/styleb426.css?ver=3.0.4373' type='text/css' media='all' />
+	<script type='text/javascript' src='../scripts/wp-includes/js/jquery/jquery.min3088.js?ver=3.7.0'
+		id='jquery-core-js'></script>
+	<script type='text/javascript' src='../scripts/wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1'
+		id='jquery-migrate-js'></script>
+	<script type='text/javascript' src='../scripts/wp-content/themes/news-pro/js/responsive-menu8a54.js?ver=1.0.0'
+		id='news-responsive-menu-js'></script>
+	<link rel='dns-prefetch' href='http://www.googletagmanager.com/' />
+	<link rel="preload" as="font"
+		href="https://beginnersbook.com/wp-content/themes/news-pro/fonts/roboto-v27-latin-regular.woff2" crossorigin>
+	<link rel="preload" as="font"
+		href="https://beginnersbook.com/wp-content/themes/news-pro/fonts/raleway-v28-latin-700.woff2" crossorigin>
+	<link rel="preload" as="font"
+		href="https://beginnersbook.com/wp-content/themes/news-pro/fonts/pt-sans-v12-latin-700.woff2" crossorigin>
+</head>
+
+<body class="article">
+	<header class="header">
+		<nav class="navbar">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="#">
+					<img id="springlogo" class="block" src="F:\JavaRavish\www.javaravish.com\scripts\images\jrlogo.PNG"
+						alt="Java Ravish" />
+				</a>
+				<button class="navbar-burger" data-target="topbar-nav">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+			<div id="topbar-nav" class="navbar-menu">
+				<div class="navbar-end">
+					<div class="navbar-item is-hoverable">
+						<a class="navbar-link" href="#">Home</a>
+					</div>
+					<div class="navbar-item is-hoverable">
+						<a class="navbar-link" href="#">Java</a>
+					</div>
+					<div class="navbar-item is-hoverable">
+						<a class="navbar-link" href="#">Spring</a>
+					</div>
+
+					<div class="navbar-item is-hoverable">
+						<a class="navbar-link" href="#">SpringBoot</a>
+					</div>
+
+					<div class="navbar-item is-hoverable">
+						<a class="navbar-link navbar-link-list" href="#">Interview Questions</a>
+						<div class="navbar-dropdown lg">
+							<a class="navbar-item" href="#">Java Interview</a>
+							<a class="navbar-item" href="#">Java 8 Interview</a>
+							<a class="navbar-item" href="#">Java Programming Interview</a>
+							<a class="navbar-item" href="#">Spring Interview</a>
+							<a class="navbar-item" href="#">SpringBoot Interview</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<label class="theme-toggler">
+				<input type="checkbox" type="checkbox" id="switch-theme-checkbox" name="switch-theme-checkbox" />
+				<span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon"
+						class="svg-inline--fa fa-moon moon" role="img" xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 384 512">
+					</svg>
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sun"
+						class="svg-inline--fa fa-sun sun" role="img" xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 512 512">
+					</svg></span>
+			</label>
+		</nav>
+	</header>
+	<script>
+		!function (theme) {
+			if (theme === 'dark') {
+				document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
+			}
+		}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)') && 'dark'))
+	</script>
+	<div class="body">
+		<div class="nav-container" data-component="framework" data-version="6.1.1">
+			<aside class="nav">
+				<div class="panels">
+					<div class="nav-panel-menu is-active" data-panel="menu">
+						<nav class="nav-menu">
+							<div class="context">
+								<button class="browse-version" id="browse-version">
+								</button>
+							</div>
+							<ul class="nav-list">
+								<li class="nav-item" data-depth="0">
+									<ul class="nav-list">
+										<h4 back class="widget-title">Java Introduction</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../java/intro.html">Java
+												Introduction</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../java/history.html">History
+												of Java</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../java/features.html">Features
+												of Java</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../06/cpp-vs-java-difference-between-cpp-and-java/index.html">C++
+												vs Java</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../06/jdk-vs-jre-vs-jvm-difference-between-them/index.html">JDK
+												vs JRE vs JVM</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/jvm/index.html">JVM - Java Virtual
+												Machine</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/first-java-program/index.html">First Java
+												Program</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/variables-in-java/index.html">Variables</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/data-types-in-java/index.html">Data Types</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/operators-in-java/index.html">Operators</a>
+										</li>
+										<h4 class="widget-title">Java Flow Control</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/if-else-statement-in-java/index.html">Java
+												If-else</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/java-switch-case/index.html">Java
+												Switch-Case</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2015/03/for-loop-in-java-with-example/index.html">Java
+												For loop</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2015/03/while-loop-in-java-with-examples/index.html">Java
+												while loop</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2015/03/do-while-loop-in-java-with-example/index.html">Java
+												do-while loop</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/java-continue-statement/index.html">Continue
+												statement</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/java-break-statement/index.html">break
+												statement</a></li>
+										<h4 class="widget-title">Java Arrays</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/java-arrays/index.html">Java Arrays</a></li>
+										<h4 class="widget-title">OOPs Concepts</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/oops-concepts/index.html">OOPs Concepts</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/03/constructors-in-java/index.html">Constructor</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/java-strings/index.html">Java String</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/java-static-class-block-methods-variables/index.html">Static
+												keyword</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/03/inheritance-in-java/index.html">Inheritance</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/java-inheritance-types/index.html">Types of
+												inheritance</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/aggregation/index.html">Aggregation</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/association/index.html">Association</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2014/07/super-keyword-in-java-with-example/index.html">Super
+												Keyword</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/method-overloading/index.html">Method
+												overloading</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2014/01/method-overriding-in-java-with-example/index.html">Method
+												overriding</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2014/01/difference-between-method-overloading-and-overriding-in-java/index.html">Overloading
+												vs Overriding</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/03/polymorphism-in-java/index.html">Polymorphism</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/runtime-compile-time-polymorphism/index.html">Types
+												of polymorphism</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/java-static-dynamic-binding/index.html">Static
+												and dynamic binding</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/java-abstract-class-method/index.html">Abstract
+												class and methods</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/java-interface/index.html">Interface</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/abstract-class-vs-interface-in-java/index.html">Abstract
+												class vs interface</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/encapsulation-in-java/index.html">Encapsulation</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/03/packages-in-java/index.html">Packages</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/java-access-modifiers/index.html">Access
+												modifiers</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/java-garbage-collection/index.html">Garbage
+												Collection</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/inner-class/index.html">Inner classes</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/java-static-import/index.html">Static
+												import</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/static-constructor/index.html">Static
+												constructor</a></li>
+										<h4 class="widget-title">Java Exception Handling</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/java-exception-handling/index.html">Exception
+												handling</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/try-catch-in-java/index.html">Java
+												try-catch</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/throw-in-java/index.html">Java throw</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/java-throws/index.html">Java throws</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/java-checked-unchecked-exceptions-with-examples/index.html">Checked
+												and Unchecked Exceptions</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/05/flow-in-try-catch-finally/index.html">Jav try
+												catch finally</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/04/exception-handling-examples/index.html">Exception
+												Examples</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../09/exception-propagation-in-java-with-examples/index.html">Exception
+												Propagation</a></li>
+										<h4 class="widget-title">Java Multithreading</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../java-collections-tutorials/index.html">Multithreading</a>
+										</li>
+										<h4 class="widget-title">Java Serialization</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../java-collections-tutorials/index.html">Serialization</a>
+										</li>
+										<h4 class="widget-title">Java 8 Features</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../java-collections-tutorials/index.html">Java 8
+												Features</a></li>
+										<h4 class="widget-title">Collections Framework</h4>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../java-collections-tutorials/index.html">Collections in
+												Java</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/java-arraylist/index.html">Java ArrayList</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/linkedlist-in-java-with-example/index.html">Java
+												LinkedList</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/vector-in-java/index.html">Java Vector</a>
+										</li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/hashset-class-in-java-with-example/index.html">Java
+												HashSet</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/linkedhashset-class-in-java-with-example/index.html">Java
+												LinkedHashSet</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/treeset-class-in-java-with-example/index.html">Java
+												TreeSet</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/hashmap-in-java-with-example/index.html">Java
+												HashMap</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/treemap-in-java-with-example/index.html">Java
+												TreeMap</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2013/12/linkedhashmap-in-java/index.html">Java
+												LinkedHashMap</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/queue-interface-in-java-collections/index.html">Java
+												Queue</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/java-collections-priorityqueue-interface/index.html">Java
+												PriorityQueue</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/java-collections-deque-interface/index.html">Java
+												Deque</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/comparable-interface-in-java-with-example/index.html">Comparable
+												interface</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2017/08/comparator-interface-in-java/index.html">Comparator
+												interface</a></li>
+										<hr>
+										<li class="nav-item" data-depth="1"><a class="nav-link"
+												href="../../../2015/03/java-collections-interview-questions-and-answers/index.html">Collections
+												Interview Questions</a></li>
+										<hr>
+									</ul>
+								</li>
+							</ul>
+							<div class="toggle-sm">
+								<button id="nav-toggle-2" class="nav-toggle"></button>
+							</div>
+						</nav>
+					</div>
+					<a id="nav-collapse-toggle"></a>
+				</div>
+				<div class="nav-resize"></div>
+			</aside>
+		</div>
+		<script>
+			!function (sidebar) {
+				if (sidebar) {
+					document.body.classList.add('nav-sm')
+				}
+			}(localStorage && localStorage.getItem('sidebar') === 'close')
+		</script>
+		<main>
+			<div class="toolbar" role="navigation">
+				<button id="nav-toggle-1" class="nav-toggle">&#9776;</button>
+			</div>
+			<div class="doc">
+				<nav class="breadcrumbs" aria-label="breadcrumbs">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="java-introduction.html">Java History</a></li>
+					</ul>
+					<hr>
+				</nav>
+				<article class="post-11022 post type-post status-publish format-standard category-learn-java entry"
+					aria-label="History of Java Programming Language" itemscope=""
+					itemtype="https://schema.org/CreativeWork">
+					<div class="entry-content" itemprop="text">
+						<p><a href="https://beginnersbook.com/java-tutorial-for-beginners-with-examples/">Java</a> is an
+							<a href="https://beginnersbook.com/2013/04/oops-concepts/">object oriented programming</a>
+							language developed by <strong>Sun Microsystems</strong> in early <strong>1990</strong> by
+							developers <strong>James Gosling</strong>, <strong>Mike Sheridan</strong> and
+							<strong>Patrick Naughton</strong>. In 1991 James Gosling and his friends formed a team
+							called <strong>Green Team</strong> to further work on this project. The original idea was to
+							develop this programming language for digital devices such as television, set-top box,
+							remote etc. Later this idea was dropped and Java is developed for internet programming.
+						</p>
+
+
+
+						<h2 class="wp-block-heading" id="h-history-of-java">History of Java</h2>
+
+
+
+						<p><strong>Original developer and programming name:</strong> </p>
+
+
+
+						<p><strong>James Gosling</strong> is considered the original developer of Java language. He is
+							also known as father of Java. He started on this in early 1990s. He originally named it
+							<strong>Greentalk</strong> and the extension was<strong> .gt</strong>.
+						</p>
+
+
+
+						<p><strong>Programming language renamed from Greentalk to Oak:</strong></p>
+
+
+
+						<p>When Green team (<strong>James Gosling</strong>, <strong>Mike Sheridan</strong> and
+							<strong>Patrick Naughton</strong>) started working on it, it was renamed to
+							<strong>Oak</strong>. Oak is a tree name, which is considered a symbol of strength and is a
+							national tree in many countries such as U.S.A., France, Germany, Romania, etc.
+						</p>
+
+
+
+						<p><strong>Again renamed from Oak to Java in 1995:</strong></p>
+
+
+
+						<p>The project is again renamed from Oak to Java in 1995 as Oak was a trademark for other
+							organization.</p>
+
+
+
+						<p><strong>Original and first version of Java:</strong></p>
+
+
+
+						<p>JDK first version alpha &amp; beta was released in 1995 by Sun Microsystems.</p>
+
+
+
+						<h2 class="wp-block-heading" id="h-java-version-history">Java Version History</h2>
+
+
+
+						<figure class="wp-block-table is-style-stripes">
+							<table>
+								<thead>
+									<tr>
+										<th>Version</th>
+										<th><strong>Release</strong><br><strong>date</strong></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>JDK Alpha &amp; Beta</td>
+										<td>1995</td>
+									</tr>
+									<tr>
+										<td>JDK 1.0</td>
+										<td>January 1996</td>
+									</tr>
+									<tr>
+										<td>JDK 1.1</td>
+										<td>February 1997</td>
+									</tr>
+									<tr>
+										<td>J2SE 1.2</td>
+										<td>December 1998</td>
+									</tr>
+									<tr>
+										<td>J2SE 1.3</td>
+										<td>May 2000</td>
+									</tr>
+									<tr>
+										<td>J2SE 1.4</td>
+										<td>February 2002</td>
+									</tr>
+									<tr>
+										<td>Java SE 5</td>
+										<td>September 2004</td>
+									</tr>
+									<tr>
+										<td>Java SE 6</td>
+										<td>December 2006</td>
+									</tr>
+									<tr>
+										<td>Java SE 7</td>
+										<td>July 2011</td>
+									</tr>
+									<tr>
+										<td>Java SE 8</td>
+										<td>March 2014</td>
+									</tr>
+									<tr>
+										<td>Java SE 9</td>
+										<td>September 2017</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>March 2018</td>
+									</tr>
+									<tr>
+										<td>Java SE 11</td>
+										<td>September 2018</td>
+									</tr>
+									<tr>
+										<td>Java SE 12</td>
+										<td>March 2019</td>
+									</tr>
+									<tr>
+										<td>Java SE 13</td>
+										<td>September 2019</td>
+									</tr>
+									<tr>
+										<td>Java SE 14</td>
+										<td>March 2020</td>
+									</tr>
+									<tr>
+										<td>Java SE 15</td>
+										<td>September 2020</td>
+									</tr>
+									<tr>
+										<td>Java SE 16</td>
+										<td>March 2021</td>
+									</tr>
+									<tr>
+										<td>Java SE 17</td>
+										<td>September 2021</td>
+									</tr>
+									<tr>
+										<td>Java SE 18</td>
+										<td>March 2022</td>
+									</tr>
+									<tr>
+										<td>Java SE 19</td>
+										<td>to be released by September 2022</td>
+									</tr>
+									<tr>
+										<td>Java SE 20</td>
+										<td>to be released by March 2023</td>
+									</tr>
+									<tr>
+										<td>Java SE 21</td>
+										<td>to be released by September 2023</td>
+									</tr>
+								</tbody>
+							</table>
+						</figure>
+					</div>
+					<footer class="entry-footer"></footer>
+				</article>
+			</div>
+		</main>
+	</div>
+	<footer class="footer flex">
+		<div id="spring-links flex">
+			<p class="smallest antialiased">©
+				<script>var d = new Date();
+					document.write(d.getFullYear());</script>, The content is copyrighted to Ravi Kalyan Kolloju.
+			</p>
+		</div>
+	</footer>
+	<script src="_/js/site.js"></script>
+</body>
+
+</html>
